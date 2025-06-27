@@ -1,5 +1,11 @@
 # Fundamentos de React
 
+## 10_manipulando-eventos
+
+No react, nó declaramos explicitamente o que queremos que o componente faça através de props de eventos.
+
+Estas props aceitam uma callback na sintaxe de arrow function, ou então uma chamada (apenas o nome, sem parênteses) de uma função externa.
+
 ## 09_props-com-dados-dinamicos
 
 - Utilização de props par enviar dados dinâmicos par um componente
