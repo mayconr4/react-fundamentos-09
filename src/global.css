@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Seletor descendente */
+footer p {
+  font-family: Cambria, serif;
+}
+
+/* Seletor classe */
+.outro-texto {
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h2,
+h3 {
+  margin: 0.5rem 0;
+}

@@ -1,0 +1,38 @@
+/* Evite nomear as classes usando hífen:
+Exemplo: topo-site {}
+Isso, vai te obrigar a usar a classe através de sintaxe 
+de array com colchetes. */
+
+/* Prefira usar a sintaxe camelCase (ou snake_case: .topo_site) */
+.topoSite {
+  background-color: #20232a;
+  color: #61dafb;
+  padding: 1rem;
+
+  hr {
+    border: none;
+    border-top: 1px solid;
+    margin: 0.4rem 0;
+  }
+}
+
+.logo {
+  vertical-align: middle;
+  margin-right: 0.2rem;
+  width: 42px;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* Classe/Seletor Descendente:
+Formata os links contidos na classe do header */
+/* .topoSite a {
+  text-decoration: none;
+  color: orange;
+} */

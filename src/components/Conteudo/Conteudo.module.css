@@ -1,0 +1,35 @@
+.conteudo {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.principal {
+  background-color: #fff;
+  padding: 1rem;
+
+  h2 {
+    color: #007acc;
+  }
+}
+
+.arredondada {
+  border-radius: 8px;
+}
+
+.sombra {
+  box-shadow: rgba(0, 0, 0, 0.27) 2px 2px 8px;
+}
+
+@media screen and (min-width: 600px) {
+  .artigos {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    article {
+      width: 48%;
+    }
+  }
+}
