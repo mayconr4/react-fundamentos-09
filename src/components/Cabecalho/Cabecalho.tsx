@@ -14,7 +14,9 @@ export default function Cabecalho() {
   const [titulo, setTitulo] = useState("Olá React!");
 
   const alternarTitulo = () => {
-    setTitulo("Experimentando States!");
+    setTitulo((texto) => {
+      texto === "Olá React!" ? "Experimentando state!" : "Olá React!";
+    });
   };
 
   return (
