@@ -1,9 +1,8 @@
-import Artigo from "./Artigo/Artigo";
 import AvisoImportante from "./AvisoImportante/AvisoImportante";
 import DicaDoDia from "./DicaDoDia/DicaDoDia";
 import estilos from "./Conteudo.module.css";
 import Saudacao from "./Saudacao";
-import cursos from "../../data/cursos";
+import ListaCursos from "./ListaCursos/ListaCursos";
 
 export default function Conteudo() {
   return (
@@ -19,12 +18,7 @@ export default function Conteudo() {
         {/* Faça a lógica necessária para apresentar o componente
         Artigo e passar para ele os dados de cada curso proveniente
         de cursos. */}
-
-        <div className={estilos.artigos}>
-          {cursos.map((curso) => (
-            <Artigo dados={curso} key={curso.id} />
-          ))}
-        </div>
+        <ListaCursos />
       </section>
 
       <DicaDoDia />

@@ -1,5 +1,11 @@
 # Fundamentos de React
 
+## 09_props-com-dados-dinamicos
+
+- Utilização de props par enviar dados dinâmicos par um componente
+- Configuração de array de dados com definição de tipo
+- Refatoração de componentes criando o ListaDeCursos com o map de Artigo dentro
+
 ## 08_props
 
 Props (abreviação de properties/propriedades) são parâmetros que um componente pode receber.
