@@ -8,11 +8,11 @@ type ArtigoProps = {
 
 export default function Artigo({ dados }: ArtigoProps) {
   // Podemos receber a prop dados para depois desestruturar:
-  const [cor, setCor] = useState("white");
+  const [cor, setCor] = useState(" #f9f9f9");
 
   const alterarCor = () => {
     setCor((valorCor) => {
-      return valorCor === "white" ? "yellow" : "white";
+      return valorCor === " #f9f9f9" ? "royalblue" : " #f9f9f9";
     });
   };
   const { titulo, preco, categoria } = dados;
