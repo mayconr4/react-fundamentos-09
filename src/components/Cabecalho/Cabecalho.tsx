@@ -9,13 +9,13 @@ export default function Cabecalho() {
   /*Aqui nos definimos a chamadada de uma função especial do React: useState. Esta e outras funções iniciadas com 
   o prefixo 'use' são conhecidas como Reacts Hooks.
  
- N caso do useState, usando desestruturação
+ No caso do useState, usando desestruturação
  ,criamos uma constante que representa o valor do state () titulo  eu uma função reposável por atualizar o state (setTitulo)*/
   const [titulo, setTitulo] = useState("Olá React!");
 
   const alternarTitulo = () => {
     setTitulo((texto) => {
-      texto === "Olá React!" ? "Experimentando state!" : "Olá React!";
+      return texto === "Olá React!" ? "Experimentando state!" : "Olá React!";
     });
   };
 

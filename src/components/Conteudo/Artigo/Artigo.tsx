@@ -1,5 +1,6 @@
 import estilos from "./Artigo.module.css";
 import type { Curso } from "../../../types/Curso";
+import { useState } from "react";
 
 type ArtigoProps = {
   dados: Curso;
@@ -7,9 +8,20 @@ type ArtigoProps = {
 
 export default function Artigo({ dados }: ArtigoProps) {
   // Podemos receber a prop dados para depois desestruturar:
+  const [cor, setCor] = useState("white");
+
+  const alterarCor = () => {
+    setCor((valorCor) => {
+      return valorCor === "white" ? "yellow" : "white";
+    });
+  };
   const { titulo, preco, categoria } = dados;
   return (
-    <article className={estilos.artigo}>
+    <article
+      className={estilos.artigo}
+      onClick={alterarCor}
+      style={{ backgroundColor: cor }}
+    >
       <h3> {titulo} </h3>
       <p>
         <b>Categoria:</b> {categoria}
