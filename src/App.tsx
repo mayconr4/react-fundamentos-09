@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
-          <Route path="/*" element={<Pagina404 />} />
+          <Route path="*" element={<Pagina404 />} />
         </Routes>
       </Container>
       <Rodape />

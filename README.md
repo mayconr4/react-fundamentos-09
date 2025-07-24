@@ -1,5 +1,14 @@
 # Fundamentos de React
 
+## 13_navegando-com-rotas
+
+Estendendo os conceitos principais so React Router:
+
+- Instalação npm install react-router-dom
+- BrowserRouter: componente que envolve toda a sua aplicação no main.tsx
+- Routes e route: definem as rotas e os caminhos associados aos componentes/paginas
+- Link: componente espacial para navegação entre ás paginas atráves das rotas. Deve ser usado no lugar da tag <a> (somente para os links relativos/internos ).
+
 ## 11_gerenciamento-de-states
 
 State (ou Estado) é uma funcionalidade especial de um componente quwe representa informações que podem mudar ao longo do tempo e que, normalmente, afetam o que é exibido na interface.

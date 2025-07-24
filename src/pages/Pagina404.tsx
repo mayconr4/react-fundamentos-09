@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Pagina404() {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800 text-center px-4">
@@ -6,12 +8,12 @@ export default function Pagina404() {
       <p className="text-lg text-gray-600 mb-6">
         A página que você procura não foi encontrada.
       </p>
-      <a
-        href="/"
+      <Link
+        to="/"
         className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
       >
         Voltar à Página Inicial
-      </a>
+      </Link>
     </section>
   );
 }
