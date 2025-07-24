@@ -17,7 +17,7 @@ export default function Conteudo() {
   console.log(categorias);
 
   return (
-    <main className={estilos.conteudo}>
+    <>
       <section
         className={`${estilos.principal} ${estilos.arredondada} ${estilos.sombra}`}
       >
@@ -57,6 +57,6 @@ export default function Conteudo() {
       <DicaDoDia />
 
       <AvisoImportante />
-    </main>
+    </>
   );
 }

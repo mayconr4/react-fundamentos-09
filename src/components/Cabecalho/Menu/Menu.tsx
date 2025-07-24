@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import estilos from "./Menu.module.css";
 
 export default function Menu() {
   return (
     <nav className={estilos.menu}>
-      <a href="">Home</a>
-      <a href="">Sobre</a>
-      <a href="">Contato</a>
+      <Link to="/">Home</Link>
+      <Link to="/sobre">Sobre</Link>
+      <Link to="/contato">Contato</Link>
     </nav>
   );
 }
