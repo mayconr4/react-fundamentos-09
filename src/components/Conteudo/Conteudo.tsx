@@ -18,9 +18,7 @@ export default function Conteudo() {
 
   return (
     <>
-      <section
-        className={`${estilos.principal} ${estilos.arredondada} ${estilos.sombra}`}
-      >
+      <section>
         <h2 className="font-bold text-lg">Fundamentos de React!</h2>
         <Saudacao nome="Tiago" classe="bg-emerald-100" />
 
