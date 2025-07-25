@@ -4,7 +4,7 @@ import estilos from "./Conteudo.module.css";
 import Saudacao from "./Saudacao";
 import ListaCursos from "./ListaCursos/ListaCursos";
 import cursos from "../../data/cursos";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Conteudo() {
   // const categorias = cursos.map((curso) => curso.categoria);
@@ -15,6 +15,12 @@ export default function Conteudo() {
   const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
 
   console.log(categorias);
+  /*Trocando o titulo conforme a categoria */
+  useEffect(() => {
+    document.title = categoriaAtiva
+      ? categoriaAtiva + "| Meu App React"
+      : "Meu App React";
+  }, [categoriaAtiva]);
 
   return (
     <>
@@ -24,9 +30,11 @@ export default function Conteudo() {
 
         <p>Este é um exemplo de aplicação React.</p>
 
-        {categorias.map((categoria) => {
+        {categorias.map((categoria, index) => {
+          //index = indice
           return (
             <button
+              key={index}
               onClick={() => setCategoriaAtiva(categoria)}
               className="  bg-blue-300  hover:bg-blue-700 rounded py-1  px-2 mr-1  my-2  "
             >

@@ -1,5 +1,21 @@
 # Fundamentos de React
 
+## 14_lidando-com-efeitos-colaterais
+
+### Sobre o useEffect
+
+O useEffect é um hook do React usado para executar ou lidar com efeitos colaterais em componentes funcionais.
+
+Ele serve para lidar com ações que ocorram fora do fluxo normal de renderização, como:
+
+- Buscar dados de uma API
+- Atualizar o Titulo da página
+- Adicionar/remover manipuladores de evento
+- Iniciar/controlar temporizadores
+- Sincronizar com mudanças externas
+
+O useEffect é executado após a renderização, e pode ser configurado para rodarapenas uma vez, sempre que umá variável mudar, ou em toda renderização, dependendo das dependências fornecidas.
+
 ## 13_navegando-com-rotas
 
 Estendendo os conceitos principais so React Router:
