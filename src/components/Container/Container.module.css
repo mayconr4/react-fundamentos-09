@@ -5,6 +5,8 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.27) 2px 2px 8px;
+  display: flex;
+  justify-content: flex-start;
 
   h2 {
     color: #007acc;
